@@ -1,0 +1,31 @@
+#1
+"""
+from random import randint  #ai line likhle memory save hobe, onno bhabe lekha jay 'import random'
+
+g_number = int(input('Enter your guess number between 1 to 5: '))
+
+r_number = randint(1,5) #boro function hole, jemon aikhane ami 0 theka 99 guess korate chacchi, tai= 'random.random() * 100'
+
+if g_number == r_number:
+    print('You have won')
+else:
+    print('You have lost')
+    print('Random number was:',r_number)
+"""
+#2
+"""
+#for loop diya onak bar khela jabe, jitar age porjonto
+
+from random import randint
+
+for x in range(1,6):      #5 porjonto cholbe
+    g_number = int(input('Enter your guess number between 1 to 5:'))
+
+    r_number = randint(1,5)
+
+    if g_number == r_number:
+        print('You have won')
+    else:
+        print('You have lost')
+        print('Random number was:',r_number)
+"""
