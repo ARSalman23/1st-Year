@@ -1,0 +1,16 @@
+# 1st-Year
+
+#include <stdio.h>
+int main(){
+int n;
+printf("Enter any number: ");
+scanf("%d",&n);
+
+if (n>0){
+    printf("%d is a natural number",n);
+}
+else{
+    printf("%d is not a natural number",n);
+}
+return 0;
+}
