@@ -1,0 +1,21 @@
+# 1st-Year
+
+#include <stdio.h>
+int main(){
+    int n,r,arm=0,c;
+    printf("enter any number: ");
+    scanf("%d",&n);
+    c=n;
+    while (n>0)
+    {
+        r=n%10;
+        arm= (r*r*r)+arm; //for 3 number like 153 (r*r*r)
+        n=n/10;
+    }
+
+    if (c==arm){
+        printf("Armstrong number");
+    }
+    else{printf("Not Armstrong number");}
+return 0;
+}
