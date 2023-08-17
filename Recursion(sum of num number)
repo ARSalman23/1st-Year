@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int sumN(int n);
+
+int main(){
+    printf("sum is: %d",sumN(5));
+    return 0;
+}
+
+int sumN(int n){
+    if(n==1){
+        return 1;
+    }
+    int sumNm1=sumN(n-1);
+    int sum=sumNm1 + n;
+    return sum;
+}
