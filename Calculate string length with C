@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int countLength(char arr[]);
+
+int main()
+{
+    char name[100];
+    fgets(name, 100, stdin);  // Use fgets to read a line of input
+    printf("Length is: %d", countLength(name));
+    return 0;  // Return 0 to indicate successful completion
+}
+
+int countLength(char arr[])
+{
+    int count = 0;
+    for (int i = 0; arr[i] != '\0'; i++)  // Corrected the comma to semicolon
+    {
+        count++;
+    }
+    return count - 1;
+}
