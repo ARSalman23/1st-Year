@@ -1,0 +1,21 @@
+#Given 2 num A and B. Print floor, ceil and round of (A/B)
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    long long A, B;
+    scanf("%lld %lld", &A, &B);
+
+    long long floor, ceil, round;
+
+    floor = A / B;
+    ceil = (A/B)+1;
+    round = llround((double)A / B);
+
+    printf("%lld\n", floor);
+    printf("%lld\n", ceil);
+    printf("%lld\n", round);
+
+    return 0;
+}
